@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.carousel {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  z-index: 1111;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 20px;
+  font-size: 20px;
+}
+
+.prev-btn {
+  left: 200px;
+}
+
+.next-btn {
+  right: 200px;
+}
